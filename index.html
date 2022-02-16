@@ -82,12 +82,44 @@
         </div>
 
         <div>
-            <button id="btnCalculate" onclick="doCalculations()">
+            <button id="btnCalculate" onclick="doCalculations()" type="button" class="btn btn-success">
                 Calculate
             </button>
         </div>
 
+        <div class="border-top">
+      
+        </div>
 
+        <div id="results">
+            <div id="stocksDoublePayment">
+                <span class="badge badge-secondary">SEZNAM</span>
+                <label><b>pro poplatníky uplatňující nárok na vyloučení dvojího zdanění podle § 38f odst. 10 zákona</b></label>
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cislo</th>
+                            <th scope="col">identifikační údaje (adresa)</th>
+                            <th scope="col">stát zdroje příjmů</th>
+                            <th scope="col">zaplacená daň</th>
+                            <th scope="col">daň</th>
+                            <th scope="col">příjmy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Fidelity Stock Plan Services, LLC (Cincinati, OH 42277-0003)</td>
+                            <td>US</td>
+                            <td>tax paid in USD</td>
+                            <td>tax paid in CZK</td>
+                            <td>dividend income in CZK</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
     </main>
 
 
