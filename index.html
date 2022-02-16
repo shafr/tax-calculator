@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tax Calculation help</title>
+
+    <link href="bs/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="bs/main.css" rel="stylesheet"> -->
+    <!-- <script src="js/inputs.js"></script> -->
+</head>
+
+<body>
+    <main role="main" class="container">
+        <div id="allInputs">
+            <div id="dollarValue">
+                <div>
+                    <label><b>Dollar value for conversion</b></label>
+                </div>
+                <div>
+                    <label>is taken from </label>
+                    <a href="https://www.kurzy.cz/kurzy-men/jednotny-kurz/2021/">here</a>
+                    <input type="text" disabled="rue" t id="inputDollarConversionValue" value="21.720">
+                </div>
+            </div>
+            <div id="salaryInputs">
+                <div>
+                    <label><b>Information from salary document from Anna</b></label>
+                </div>
+                <div>
+                    <label>Tax Base (Field 5.)</label>
+                    <input type="text" id="inputSalaryTaxBase">
+                </div>
+                <div>
+                    <label>Taxes paid (Field 6.)</label>
+                    <input type="text" id="inputSalaryTaxesPaid">
+                </div>
+            </div>
+
+            <div id="flatInputs">
+                <div id="hypoInputs">
+                    <div>
+                        <label><b>Information from your bank (in case of mortgage)</b></label>
+                    </div>
+                    <div>
+                        <label> Mortgage payment (castka uroku z vyse uvedenoho uveru)</label>
+                        <input type="text" id="inputBankMortgage">
+                    </div>
+                </div>
+
+                <div id="flatIncome">
+                    <div>
+                        <label><b>Information from your house or cooperative tenant</b></label>
+                    </div>
+                    <div>
+                        <label> Rent income (if your house is renting spaces, like for stores or offices)</label>
+                        <input type="text" id="inputBankMortgage">
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="childsInputs">
+                <div>
+                    <label><b>Information from your Kindergarten (in case children)</b></label>
+                </div>
+                <div>
+                    <label> Kindergarten payment</label>
+                    <input type="text" id="inputBankMortgage">
+                </div>
+            </div>
+
+            <div id="stocksRelated">
+                <div id="stocksInputsDividends">
+                </div>
+
+                <div id="stocksInputsReceived">
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <button id="btnCalculate" onclick="doCalculations()">
+                Calculate
+            </button>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
